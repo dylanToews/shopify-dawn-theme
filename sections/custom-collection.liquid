@@ -102,7 +102,49 @@
       "id": "collections",
       "label": "Collections"
     },
-
+    {
+      "type": "select",
+      "id": "title_source",
+      "label": "Title Source",
+      "options": [
+        {
+          "value": "collection_title",
+          "label": "Collection Title"
+        },
+        {
+          "value": "custom_title",
+          "label": "Custom Title"
+        }
+      ],
+      "default": "collection_title"
+    },
+    {
+      "type": "text",
+      "id": "custom_title",
+      "label": "Custom Title",
+      "default": "My Title"
+    },
+    {
+      "type": "select",
+      "id": "img_source",
+      "label": "Image Source",
+      "options": [
+        {
+          "value": "collection_img",
+          "label": "Collection Image"
+        },
+        {
+          "value": "custom_title",
+          "label": "Custom Image"
+        }
+      ],
+      "default": "collection_img"
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_img",
+      "label": "Custom Image"
+    },
     {
       "type": "select",
       "id": "heading_size",
@@ -237,51 +279,7 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
-    },
-{
-      "type": "select",
-      "id": "title_source",
-      "label": "Title Source",
-      "options": [
-        {
-          "value": "collection_title",
-          "label": "Collection Title"
-        },
-        {
-          "value": "custom_title",
-          "label": "Custom Title"
-        }
-      ],
-      "default": "collection_title"
-    },
-    {
-      "type": "text",
-      "id": "custom_title",
-      "label": "Custom Title",
-      "default": "My Title"
-    },
-    {
-      "type": "select",
-      "id": "img_source",
-      "label": "Image Source",
-      "options": [
-        {
-          "value": "collection_img",
-          "label": "Collection Image"
-        },
-        {
-          "value": "custom_title",
-          "label": "Custom Image"
-        }
-      ],
-      "default": "collection_img"
-    },
-    {
-      "type": "image_picker",
-      "id": "custom_img",
-      "label": "Custom Image"
     }
-    
   ],
   "blocks": [
     {
