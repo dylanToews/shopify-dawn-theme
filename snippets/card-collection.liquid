@@ -40,6 +40,8 @@
     style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
   >
 
+<!--     Renders the card heading. Moved up to match specs    -->
+    
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading">
@@ -63,7 +65,7 @@
     <div class="card__inner {% if card_style == 'standard' %}color-{{ card_color_scheme }} gradient{% endif %}{% if card_collection.featured_image or card_style == 'standard' %} ratio{% endif %}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
       {%- if card_collection.featured_image -%}
         
-      
+<!--  Renders collection media/photo    -->
       
       <div class="card__media">
           <div class="media media--transparent media--hover-effect">
@@ -91,12 +93,10 @@
         </div>
       {%- endif -%}
 
-
+<!--   
+    Renders the hyperlink with the arrow. Commented out because not necessary to meet specs
       
-
-
-      
-<!--     </div>
+    </div>
     {% if card_style == 'card' or card_collection.featured_image %} 
       <div class="card__content">
         <div class="card__information">
