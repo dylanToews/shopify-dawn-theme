@@ -82,7 +82,6 @@
     },
     "937ec70d-b978-408e-9419-adb2f58cbce2": {
       "type": "collection-list",
-      "disabled": true,
       "blocks": {
         "template--17814885138754__937ec70d-b978-408e-9419-adb2f58cbce2-1675206634b228e1c0-0": {
           "type": "featured_collection",
@@ -130,6 +129,7 @@
     },
     "939df381-a75f-4d7c-a6a0-1a8fb10c19b4": {
       "type": "custom-section",
+      "disabled": true,
       "settings": {
         "title": "HELLO WORLD",
         "content": "<p>asdfasdfasdfdsaf<\/p>"
