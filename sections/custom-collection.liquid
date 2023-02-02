@@ -230,12 +230,28 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     },
+{
+      "type": "select",
+      "id": "title_source",
+      "label": "Title Source",
+      "options": [
+        {
+          "value": "collection_title",
+          "label": "Collection Title"
+        },
+        {
+          "value": "custom_title",
+          "label": "Custom Title"
+        }
+      ],
+      "default": "collection_title"
+    },
     {
       "type": "text",
-      "id": "snippet_text",
-      "label": "Snippet Text",
-      "default": "Hello, world!"
-    }  
+      "id": "custom_title",
+      "label": "Custom Title",
+      "default": "My Title"
+    }
     
   ],
   "blocks": [
