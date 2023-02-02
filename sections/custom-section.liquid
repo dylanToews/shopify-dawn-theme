@@ -1,6 +1,17 @@
   <div class="custom-section">
+  <section id="custom-collection-section">
   <h2>{{ section.settings.title }}</h2>
   {{ section.settings.content }}
+  <ul>
+    {% for collection in collections %}
+      <li>
+        {% assign title = collection.settings.custom_title | default: collection.title %}
+        <h3>{{ title }}</h3>
+        <img src="{{ collection.image }}" alt="{{ title }}">
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 </div>
 
 
