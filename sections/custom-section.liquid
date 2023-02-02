@@ -1,44 +1,31 @@
-  <div class="custom-section">
+<section id="custom-collection-section">
   <h2>{{ section.settings.title }}</h2>
-  {{ section.settings.content }}
-</div>
-
+  <ul>
+    {% for collection in collections %}
+      <li>
+        {% assign title = collection.settings.custom_title | default: collection.title %}
+        <h3>{{ title }}</h3>
+        <img src="{{ collection.image }}" alt="{{ title }}">
+      </li>
+    {% endfor %}
+  </ul>
+</section>
 
 {% schema %}
 {
-  "name": "Custom Section123",
+  "name": "Custom Collection Section",
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Section Title",
-      "default": "Custom Section"
+      "label": "Title"
     },
     {
-      "type": "richtext",
-      "id": "content",
-      "label": "Section Content",
-      "default": "<p>This is a custom section.</p>"
+      "type": "collection",
+      "id": "collections",
+      "label": "Collections"
+
     }
-  ],
-  "presets": [
-    {
-      "name": "Custom Section",
-      "category": "Custom",
-      "settings": {
-        "title": "Custom Section",
-        "content": "<p>This is a custom section.<p>"
-      }
-    }
-  ],
-  "blocks": []
+  ]
 }
-  
 {% endschema %}
-
-{% stylesheet %}
-  
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
