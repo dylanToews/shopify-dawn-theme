@@ -70,7 +70,7 @@
       <div class="card__media">
           <div class="media media--transparent media--hover-effect">
 
-              {% if section.settings.img_source == 'collection_image' %}
+              {% if section.settings.img_source == 'collection_img' %}
              <h2>Pizza</h2>
                   <img
                     srcset="{%- if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
