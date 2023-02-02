@@ -90,7 +90,11 @@
         "7754784c-2a64-43a3-8de2-5bbf72d30b7a"
       ],
       "settings": {
-        "title": "New Banana",
+        "title": "Custom Collection",
+        "collections": "",
+        "title_source": "collection_title",
+        "custom_title": "My Title",
+        "img_source": "collection_img",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 4,
@@ -99,8 +103,7 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36,
-        "snippet_text": "Hello, world!"
+        "padding_bottom": 36
       }
     }
   },
