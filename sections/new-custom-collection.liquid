@@ -1,12 +1,25 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Custom Collection",
+  "settings": [
+    {
+      "type": "text",
+      "id": "collection_title",
+      "label": "Collection Title",
+      "default": "My Collection"
+    },
+    {
+      "type": "image_picker",
+      "id": "collection_image",
+      "label": "Collection Image"
+    }
+  ]
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+<div class="custom-collection">
+  <h2>{{ section.settings.collection_title }}</h2>
+  {% if section.settings.collection_image %}
+    <img src="{{ section.settings.collection_image | img_url: '800x' }}" alt="{{ section.settings.collection_title }}">
+  {% endif %}
+</div>
