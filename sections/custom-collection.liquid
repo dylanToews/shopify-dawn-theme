@@ -97,18 +97,27 @@
       "default": "Collections",
       "label": "t:sections.collection-list.settings.title.label"
     },
+    // I would like to have the options for this linked to the block loop that iterates through the card-collection
+    // and use the id's to gain access to each individual card. Then I would use a conditional for selecting the right title and image
+  
     {
       "type": "select",
       "id": "collection_source",
       "label": "Collection Source",
-      "options": [
+      "options": [ 
         {
-   
-          "value": "test",
-          "label": "test"
+          "value": "img_1",
+          "label": "Image 1"
+        },
+        {
+          "value": "img_2",
+          "label": "Image 2"
+        },
+        {
+          "value": "img_3",
+          "label": "Image 3"
         }
-      ]
-      
+      ]      
     },
     {
       "type": "collection",
