@@ -71,7 +71,7 @@
           <div class="media media--transparent media--hover-effect">
 
               {% if section.settings.img_source == 'collection_image' %}
-             
+             <h2>Pizza</h2>
                   <img
                     srcset="{%- if card_collection.featured_image.width >= 165 -%}{{ card_collection.featured_image | image_url: width: 165 }} 165w,{%- endif -%}
                       {%- if card_collection.featured_image.width >= 330 -%}{{ card_collection.featured_image | image_url: width: 330 }} 330w,{%- endif -%}
@@ -93,6 +93,7 @@
                     class="motion-reduce"
                   >
               {%- else -%}
+                <h2>Skatebaord</h2>
                 {{ section.settings.custom_img }}
               {%- endif -%}
           </div>
