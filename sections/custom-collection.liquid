@@ -31,7 +31,8 @@
     {%- unless section.settings.title == blank -%}
       <div class="title-wrapper-with-link{% if show_mobile_slider %} title-wrapper--self-padded-tablet-down{% else %} title-wrapper--self-padded-mobile{% endif %} title-wrapper--no-top-margin">
         <h2 id="SectionHeading-{{ section.id }}" class="collection-list-title {{ section.settings.heading_size }}">{{ section.settings.title | escape }}</h2>
-         <h1>{{ section.settings.collection_title }}</h1>
+<!--          <h1>{{ section.settings.collection_title }}</h1> -->
+      <h1>Banana</h1>
   
         {%- if section.settings.show_view_all and show_mobile_slider -%}
           <a href="{{ routes.collections_url }}" id="ViewAll-{{ section.id }}" class="link underlined-link large-up-hide" aria-labelledby="ViewAll-{{ section.id }} SectionHeading-{{ section.id }}">{{ 'sections.collection_list.view_all' | t }}</a>
@@ -93,13 +94,6 @@
       "label": "t:sections.collection-list.settings.title.label"
     },
 
-// adding in ability for user to add in their own collection title//
-       {
-      "type": "text",
-      "id": "collection_title",
-      "label": "Collection Title",
-      "default": "My Collection"
-    },
     {
       "type": "select",
       "id": "heading_size",
