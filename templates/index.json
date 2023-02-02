@@ -1,85 +1,5 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "disabled": true,
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Herbs & Such",
-            "heading_size": "h0"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "A fine assortment of herbs and gardening equipment",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/indoor-garden-with-ivy-on-sill.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "disabled": true,
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>A Shop By Dylan Toews<\/p>",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Made at the request and following the requirements of Theory Digital<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "accent-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "937ec70d-b978-408e-9419-adb2f58cbce2": {
       "type": "collection-list",
       "disabled": true,
@@ -128,14 +48,6 @@
         "padding_bottom": 36
       }
     },
-    "939df381-a75f-4d7c-a6a0-1a8fb10c19b4": {
-      "type": "custom-section",
-      "disabled": true,
-      "settings": {
-        "title": "HELLO WORLD",
-        "content": "<p>asdfasdfasdfdsaf<\/p>"
-      }
-    },
     "dbc35e81-1fd5-4846-9d02-38d726d53be3": {
       "type": "custom-collection",
       "blocks": {
@@ -162,13 +74,20 @@
           "settings": {
             "collection": "home-goods"
           }
+        },
+        "7754784c-2a64-43a3-8de2-5bbf72d30b7a": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
         "template--17838772453698__dbc35e81-1fd5-4846-9d02-38d726d53be3-1675356926a3a2a43b-0",
         "template--17838772453698__dbc35e81-1fd5-4846-9d02-38d726d53be3-1675356926a3a2a43b-1",
         "692cf1d3-5919-4fad-85d9-a29485d53d12",
-        "template--17838772453698__dbc35e81-1fd5-4846-9d02-38d726d53be3-1675356926a3a2a43b-2"
+        "template--17838772453698__dbc35e81-1fd5-4846-9d02-38d726d53be3-1675356926a3a2a43b-2",
+        "7754784c-2a64-43a3-8de2-5bbf72d30b7a"
       ],
       "settings": {
         "title": "New Custom Collection",
@@ -185,10 +104,7 @@
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
     "937ec70d-b978-408e-9419-adb2f58cbce2",
-    "939df381-a75f-4d7c-a6a0-1a8fb10c19b4",
     "dbc35e81-1fd5-4846-9d02-38d726d53be3"
   ]
 }
