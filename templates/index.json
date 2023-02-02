@@ -2,6 +2,7 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -50,6 +51,7 @@
     },
     "rich_text": {
       "type": "rich-text",
+      "disabled": true,
       "blocks": {
         "heading": {
           "type": "heading",
@@ -80,6 +82,7 @@
     },
     "937ec70d-b978-408e-9419-adb2f58cbce2": {
       "type": "collection-list",
+      "disabled": true,
       "blocks": {
         "template--17814885138754__937ec70d-b978-408e-9419-adb2f58cbce2-1675206634b228e1c0-0": {
           "type": "featured_collection",
@@ -113,7 +116,7 @@
         "a61d66fb-a486-4330-bb2a-c234bb48463a"
       ],
       "settings": {
-        "title": "Feature Products",
+        "title": "Feature Products - Built with JSON and Liquid",
         "heading_size": "h2",
         "image_ratio": "portrait",
         "columns_desktop": 4,
@@ -124,11 +127,19 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "939df381-a75f-4d7c-a6a0-1a8fb10c19b4": {
+      "type": "custom-section",
+      "settings": {
+        "title": "HELLO WORLD",
+        "content": "<p>asdfasdfasdfdsaf<\/p>"
+      }
     }
   },
   "order": [
     "image_banner",
     "rich_text",
-    "937ec70d-b978-408e-9419-adb2f58cbce2"
+    "937ec70d-b978-408e-9419-adb2f58cbce2",
+    "939df381-a75f-4d7c-a6a0-1a8fb10c19b4"
   ]
 }
