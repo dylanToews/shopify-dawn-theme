@@ -1,3 +1,10 @@
+<div class="custom-collection">
+  <h2>{{ section.settings.collection_title }}</h2>
+  {% if section.settings.collection_image %}
+    <img src="{{ section.settings.collection_image | img_url: '800x' }}" alt="{{ section.settings.collection_title }}">
+  {% endif %}
+</div>
+
 {% schema %}
 {
   "name": "Custom Collection",
@@ -17,9 +24,4 @@
 }
 {% endschema %}
 
-<div class="custom-collection">
-  <h2>{{ section.settings.collection_title }}</h2>
-  {% if section.settings.collection_image %}
-    <img src="{{ section.settings.collection_image | img_url: '800x' }}" alt="{{ section.settings.collection_title }}">
-  {% endif %}
-</div>
+
