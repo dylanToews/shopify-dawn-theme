@@ -171,6 +171,8 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .card__heading:last-child {
